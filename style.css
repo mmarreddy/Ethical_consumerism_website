@@ -1,0 +1,414 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Part 1: Navbar */
+/* General style rule set for all items in ul */
+
+.navbar{
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
+  height: 65px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: static;
+  top: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0%;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  font-family: futura;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 10px;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #b8c0b4;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  color: #757575;
+  text-decoration-line: underline;
+  text-decoration-color: #000000;
+}
+
+.navbar ul li:nth-of-type(1){
+  margin-left: 30px;
+}
+
+.nav-button{
+  width: 105px;
+  height: 35px;
+  font-size: 11px;
+  padding: 6px;
+}
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.header-container {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #fafafa;
+}
+
+/* Style rules for flex-item 1 */
+.header-item:nth-of-type(1) {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 40px;
+  padding-top: 30px;
+}
+
+#header-img {
+  float: left;
+  margin-right: 20px;
+  padding-bottom: 0%;
+}
+
+.header-item a {
+  font-size: 10px;
+  margin-top: 0%;
+  margin-left: 20px;
+}
+
+/* Style rules for flex-item 1 */
+.header-item:nth-of-type(2) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  float:right;
+  text-align: right;
+  padding-top: 10px;
+  margin-right: 60px;
+  padding-left: 1%;
+}
+
+.header-item:nth-of-type(2) p{
+  font-family: "futura";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* Style set for all flex-items */
+.header-item {
+  color: #000000;
+  text-align: left;
+}
+
+.header-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+button {
+  background-color: #656e5e;
+  align: right;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: futura;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+h2 {
+  font-family: 'source code pro';
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+p {
+  color: #383838;
+  margin-left: 10px;
+}
+
+/*What is section styling*/
+.midsection{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.midsection-item{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.midsection-item p{
+  text-align: left;
+  line-height: 20px;
+}
+
+.midsection-item:nth-of-type(2){
+  max-width: 100%; 
+  text-align: center; 
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#mid-video{
+  text-align: center;
+}
+/*Learn more section styling*/
+.learnMore{
+  margin-left: 40px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; 
+  justify-content: left; 
+}
+
+.article-item {
+  flex: 1 0 calc(33.33% - 60px); /* Distribute the items evenly in a row, accounting for gap */
+  max-width: 300px; 
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%; 
+  height: 200px; 
+   object-fit: cover;
+  border-radius: 8px 8px 0 0; 
+}
+
+.card-content {
+  padding: 20px; /* Add padding inside the card */
+}
+
+.card-content a {
+  font-family: 'source code pro';
+  text-decoration: underline;
+  color: #0000ff !important;
+}
+
+.card-content a:hover {
+  color: #3e453a !important;
+}
+
+.card-content a:active {
+  color: #356947 !important;
+}
+
+.card-content a:visited {
+  color: #000000;
+}
+
+.card-content p {
+  font-family: 'source code pro'
+  margin-top: 10px;
+  color: #000000;
+}
+
+
+footer {
+  position: static;
+  background-color: #5c665c;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  align-content: center;
+  color: #ffffff;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #ffffff;
+}
+
+.dark-mode .navbar ul li a {
+  color: #ffffff;
+}
+
+.dark-mode .header-item h1 {
+  color: #ffffff;
+}
+
+.dark-mode .header-container{
+  background-color: black;
+}
+
+#theme-button {
+  background-color: #656f5f;
+}
+
+.dark-mode .article-item p {
+  color: #ffffff
+}
+.dark-mode .article-item a{
+  color: #ffffff;
+}
+.dark-mode .midsection p {
+  color: #ffffff;
+}
+.dark-mode .signatures p {
+  color: #ffffff;
+}
+.dark-mode .petition-para p{
+  color: #ffffff;
+}
+.dark-mode .petition{
+  background-color: #000000;
+}
+.dark-mode .article-item a {
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #000000;
+}
+
+/*Petition section styling*/
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  margin-left:10px;
+
+}
+.petition{
+  padding-top: 10px;
+  background-color: #fafafa;
+}
+.petition h2{
+   margin-left: 40px;
+}
+.petition-para {
+  width: 55%;
+  padding-right: 20px;
+}
+.petition-para p {
+  margin-left: 40px;
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+#sign-petition{
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.inputs{
+  margin-left: 40px;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+/*Animation styling*/
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active{
+  transform: translateY(0px);
+  opacity:1;
+}
+
+/*Modal styling*/
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  color: white;
+  background-color: #5d6561;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "futura";
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+  color: white;
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#credit{
+  font-size: 10px;
+  color:#9ca5a0
+}
+#close-button{
+  background-color: black;
+}

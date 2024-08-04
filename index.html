@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Ethical Consumer</title>
+  <link rel="icon" href="https://fontawesome.com/icons/seedling?f=classic&s=solid">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#petition">Petition</a></li>
+      <li><a href="#learn">Learn More</a></li>
+      <li><button id="theme-button" class="nav-button">Dark Mode</button></li>
+      <li><button class="nav-button" id="motion-button">Reduce Motion</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+  <section class="header-container">
+    <div class="header-item">
+      <img
+        src="assets/header-img.png"
+        id="header-img" alt="Man pointing to shopping bags" width="550"
+<p><a href="https://www.freepik.com/free-vector/pricing-abstract-concept-illustration_20769903.htm#fromView=search&page=1&position=1&uuid=7fc41541-631a-4aef-9b39-a5da41b2f646">Image by vectorjuice on Freepik</a></p>
+    </div>
+    <div class="header-item">
+      <h1>MAKE AN IMPACT WITH EVERY PURCHASE YOU MAKE</h1>
+      <p>Become an ethical shopper!</p>
+      <div class="header-button">
+        <button onclick="document.getElementById('lower-section').scrollIntoView({ behavior: 'smooth' })">Find out
+          more!</button>
+        <button onclick="document.getElementById('petition').scrollIntoView({ behavior: 'smooth' })">Sign Petition</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="midsection revealable">
+    <div id="about" class="midsection-item">
+      <br>
+      <br>
+      <h2>WHAT IS ETHICAL CONSUMERISM?</h2>
+      <p>Ethical consumerism, a burgeoning trend in contemporary consumer culture, represents a conscious shift towards more mindful purchasing habits. It's characterized by consumers' prioritization of values such as environmental sustainability, social justice, and ethical labor practices in their buying decisions. Those who embrace ethical consumerism go beyond merely seeking products or services based on price and quality; they delve into the ethical dimensions of their consumption, considering the broader impacts on people, animals, and the planet
+        <br><br>Central to ethical consumerism is a desire for transparency and accountability within supply chains and production processes. Consumers demand clear information about sourcing, manufacturing practices, and corporate social responsibility initiatives from the companies they support. They gravitate towards businesses that demonstrate a commitment to ethical standards and are transparent about their practices. Moreover, ethical consumers engage in activism and advocacy efforts to promote positive change, whether through supporting fair trade products, boycotting companies with unethical practices, or advocating for regulatory measures that uphold ethical standards.
+      </p>
+       </div>
+      <div class = "midsection-item">
+      <iframe id="mid-video" width="400" height="260" src="https://www.youtube.com/embed/aRqlk1ogCls?si=KZfTI0f2VP9OE9UV" frameborder="0" allowfullscreen></iframe>
+       
+  </section>
+
+  <!--Petition section-->
+  <section class="petitionSection revealable">
+    <div class="petition" id="petition">
+      <h2>SIGN OUR PETITION 📢</h2>
+      <div class="petition-container">
+        <div class="petition-para">
+          <p> The plight of workers in fast fashion factories is a heart-wrenching tale of exploitation and suffering.
+            Imagine toiling away in overcrowded, stifling conditions, surrounded by hazardous chemicals, and enduring
+            endless hours without respite. This is the harsh reality for many individuals who fuel the insatiable demand
+            for cheap clothing. These workers are not just statistics; they are human beings, deserving of respect and
+            fair treatment. It's time to confront the brutal truth behind fast fashion and demand change. We cannot turn
+            a blind eye to the suffering of those who labor tirelessly to clothe us. Join the fight for justice in the
+            fashion industry. Sign our petition to improve working conditions for factory workers now!
+          </p>
+        </div>
+        <div class="signatures">
+          <p>🖊️ Fatima from Dhaka supports this.</p>
+          <p>🖊️ Quentin from Fairfax supports this.</p>
+          <p>🖊️ Anh from Hanoi supports this.</p>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+        </div>
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <!-- inputs go here -->
+        <div class="inputs">
+        <label id="label1" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" placeholder="Hometown">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email">
+      <!--- Sign Now Button --->
+      <button id="sign-now-button">Sign Now</button>
+           </div>
+      </div>
+  </section>
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="modal-text-container">
+        <p id="thanks-modal-content">Thank you!</p>
+        <button id="close-button">Close</button>
+          <p id="credit">Image by freepik</p>
+        </div>
+        <img id="modal-img" src="https://img.freepik.com/free-vector/thank-you-placard-concept-illustration_114360-14876.jpg?t=st=1713839500~exp=1713843100~hmac=da54abd817ce1e9b7c8353cc0f85f50c88cd4046fb7d1ac70b91ab8045dfaf35&w=1060" alt="Thank you placard" width="350">
+      </div>
+    </div>
+
+          
+  <!--Format under in columns of three-->
+          <section class="learnMore revealable">
+            <h2 id="learn">LEARN MORE</h2>
+            <div class="articles">
+              <div class="row">
+                <div class="article-item">
+                  <div class="card">
+                    <img id="img1" src="https://www.ethicalconsumer.org/sites/default/files/styles/primary_image_xxlarge/public/images/2018-05/why%20shop%20ethically%20fairtrade%20shopping.jpg?h=9e499333&itok=UkW43c85" alt="Person buying groceries">
+                    <div class="card-content">
+                      <a href="https://www.ethicalconsumer.org/why-shop-ethically" target="_blank">Why Shop Ethically</a>
+                      <p>Learn more about why you should become an ethical shopper</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-item">
+                  <div class="card">
+                    <img id="img3" src="https://www.fairtradecertified.org/wp-content/uploads/2022/06/wwft-news-header.png" alt="workers making clothes">
+                    <div class="card-content">
+                      <a href="https://www.fairtradecertified.org/blog/fair-trade-clothing-guide/?gad_source=1&gclid=Cj0KCQjwlZixBhCoARIsAIC745APT3RSsaMYBEEl0a7KVkxzHLeS7mlyuKjvb9IQ6AjnowxeA-DFTnUaAurHEALw_wcB" target="_blank">Guide To Fair Trade Clothing</a>
+                      <p>Learn more about about where to shop for fair trade clothes</p>
+                  </div>
+                </div>
+                  </div>
+                <div class="article-item">
+                  <div class="card">
+                    <img id="img2" src="https://www.thoughtco.com/thmb/nRN02-kX6vXllck7oTzxcehP8q4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-518337947-58b886345f9b58af5c2a3e41.jpg" alt="Woman buying vegetables">
+                    <div class="card-content">
+                      <a href="https://www.thoughtco.com/what-is-an-ethical-consumer-3026072" target="_blank">How to be an Ethical Consumer</a>
+                      <p>This article details the ways to go about consuming ethically</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  <section id="lower-section"></section>
+  <div class="footer">
+    <footer>
+      <p>This is the footer of The Ethical Consumerism.</p>
+      <p>
+        <a href="https://www.thoughtco.com/what-is-an- 
+         ethical-consumer-3026072" target="_blank">Learn more</a>
+        <a href="https://www.ethicalconsumer.org/why-shop- 
+        ethically" target="_blank">Learn why</a>
+      </p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
